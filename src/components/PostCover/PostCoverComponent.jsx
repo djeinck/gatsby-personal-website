@@ -7,6 +7,7 @@ class PostCover extends Component {
   render() {
     const { fileEdges, postNode, coverHeight, coverClassName } = this.props;
     const post = postNode.frontmatter ? postNode.frontmatter : postNode;
+    const imgHeight = post.cover ? coverHeight : 0;
     const coverNodeList = fileEdges.filter(fileNode => {
       if (fileNode.node.childImageSharp === null) return false;
 
@@ -25,7 +26,7 @@ class PostCover extends Component {
         <Img
           fluid={coverNodeList[0].node.childImageSharp.fluid}
           outerWrapperClassName={coverClassName}
-          style={{ height: coverHeight, width: "100%" }}
+          style={{ height: imgHeight, width: "100%" }}
         />
       );
     }
@@ -39,7 +40,7 @@ class PostCover extends Component {
       <div
         style={{
           backgroundImage: `url(${coverURL})`,
-          height: `${coverHeight}px`
+          height: `${imgHeight}px`
         }}
         className={coverClassName}
       />

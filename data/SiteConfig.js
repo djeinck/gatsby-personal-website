@@ -18,9 +18,9 @@ const config = {
   userEmail: "MaterialUser@example.com", // Email used for RSS feed's author segment
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userAvatar: "https://media.licdn.com/dms/image/C4E03AQFvsE7ufmb4cA/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=ljugbdCVKo7dn09gFUr3neGTdqdVbQje72Zsaqj5z74", // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+    "Hello, I am a software engineer in the San Fransisco Bay Area. This site is ment to assist people preparing for technicall interviews.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

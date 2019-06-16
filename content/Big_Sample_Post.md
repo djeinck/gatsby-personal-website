@@ -1,6 +1,6 @@
 ---
 title: "Big Test"
-cover: "5.jpg"
+cover: "8.jpg"
 category: "moar"
 date: "2018-03-01"
 slug: "Big-Sample_Test"
