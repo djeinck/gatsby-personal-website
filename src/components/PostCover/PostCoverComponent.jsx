@@ -20,13 +20,18 @@ class PostCover extends Component {
 
       return false;
     });
+    
+    var imgStyle = {
+      height: imgHeight, 
+      width: "100%"
+    }
 
     if (coverNodeList.length === 1) {
       return (
         <Img
           fluid={coverNodeList[0].node.childImageSharp.fluid}
           outerWrapperClassName={coverClassName}
-          style={{ height: imgHeight, width: "100%" }}
+          style={imgStyle}
         />
       );
     }
@@ -42,8 +47,8 @@ class PostCover extends Component {
           backgroundImage: `url(${coverURL})`,
           height: `${imgHeight}px`
         }}
-        className={coverClassName}
-      />
+        className={coverClassName}>
+      </div>
     );
   }
 }

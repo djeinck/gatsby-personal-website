@@ -1,5 +1,6 @@
 import React from "react";
 import PostPreview from "../PostPreview";
+import {GridList} from "react-md"
 
 class PostListing extends React.Component {
   getPostList() {
@@ -21,7 +22,7 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div className="md-grid md-grid--no-spacing md-cell--middle">
-        <div className="md-grid md-cell--8 mobile-fix">
+        <div className="md-grid md-cell--10 mobile-fix">
           {postList.map(post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}

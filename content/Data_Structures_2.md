@@ -4,10 +4,10 @@ cover: "data-structure.jpg"
 date: "2019-06-15"
 category: "tech interview"
 tags:
-    - Array
-    - Linked List
-    - Stack
-    - Queue
+    - HashTable
+    - Tree
+    - Heap
+    - Graph
 ---
 
 ## Array
